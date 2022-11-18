@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import BackgroundGradiend from "../components/BackgroundGradient";
 const MainPage = () => {
     return (
         <div className='bg-gray-50 flex justify-center items-center grow '>
-            <BackgroundGradiend />
+            
             <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center justify-between flex-col'>
                
                 <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>

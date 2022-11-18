@@ -1,17 +1,17 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { setMessage } from "./messageSlice";
-import authService from "../services/auth.service";
+//import authService from "../services/auth.service";
 const user = JSON.parse(localStorage.getItem("user"));
 export const signUp = createAsyncThunk(
     "auth/signup",
     async ({ username, email, password }, thunkAPI) => {
         try {
-            const response = await authService.signUp(
+            /*const response = await authService.signUp(
                 username,
                 email,
                 password
-            );
-            return response.data;
+            );*/
+            return 1//response.data;
         } catch (error) {
             const message =
                 (error.response &&
@@ -28,8 +28,8 @@ export const login = createAsyncThunk(
     "auth/login",
     async ({ username, password }, thunkAPI) => {
         try {
-            const response = await authService.login(username, password);
-            return response.data;
+            //const response = await authService.login(username, password);
+            return 1//response.data;
         } catch (error) {
             const message =
                 (error.response &&
@@ -43,7 +43,8 @@ export const login = createAsyncThunk(
     }
 );
 export const logOut = createAsyncThunk("auth/logout", async () => {
-    await authService.logout();
+    //await //authService.logout();
+    return 0
 });
 const initialState = user
     ? { isLoggedIn: true, user: user.user }
