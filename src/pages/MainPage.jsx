@@ -4,9 +4,12 @@ const MainPage = () => {
     return (
         <div className='bg-gray-50 flex justify-center items-center grow '>
             
-            <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center justify-between flex-col'>
-               
-                <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
+            <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex items-center flex-col h-full'>
+
+               <NavLink to='/users'>
+                User list
+               </NavLink>
+                {/*<div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
                     <div className='inline-flex rounded-md shadow'>
                         <NavLink
                             to='/posts'
@@ -27,7 +30,7 @@ const MainPage = () => {
                             Learn more
                         </Link>
                     </div>
-                </div>
+                        </div>*/}
             </div>
         </div>
     );
